@@ -1,0 +1,58 @@
+﻿<script src="~/Scripts/home.js"></script>
+<div class="container" style="padding:1%;">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="color: white;">
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="inpSearch"
+                           onkeypress="return staticHomeJs.onEnterSearch(event,staticHomeJs)" placeholder="Search..." />
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row" style="height:1px;background-color:white;margin-bottom:5px;"></div>
+    <div class="row" style="background-color:#6f6b6b;margin-bottom:5px;color:white;">
+        Search results
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div id="carouselInner" class="carousel-inner" style="margin-bottom:5px;" role="listbox">
+                    @*<div class="carousel-item active">
+                            <label class="d-block img-fluid">First slide</label>
+                        </div>
+                        <div class="carousel-item">
+                            <label class="d-block img-fluid">Second slide</label>
+                        </div>
+                        <div class="carousel-item">
+                            <label class="d-block img-fluid">Third slide</label>
+                        </div>*@
+                </div>
+                <a class="carousel-control-prev" style="float:left;" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" style="float:right;" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="height:1px;background-color:white;margin-bottom:5px;"></div>
+    <div class="row" style="color:white;">
+        Session stored data
+        <div id="table-wrapper">
+            <div id="table-scroll" class="tbl">
+                <table id="table-session">
+                    <thead>
+                        <tr class="headers">
+                            <th><span class="text ">Name</span></th>
+                            <th><span class="text ">Avater Url</span></th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-session-tbody"></tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
